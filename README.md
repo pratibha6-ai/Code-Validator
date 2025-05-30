@@ -1,5 +1,6 @@
-💡Code-Validator
-A smart, interactive web & mobile app that lets users generate, validate, and fix programming code using AI-powered agents. 
+💡#Code-Validator
+  
+  A smart, interactive web & mobile app that lets users generate, validate, and fix programming code using AI-powered agents. 
 Built with Flutter (frontend) and Flask (backend), this tool streamlines the process of writing error-free code in a developer-friendly interface.
 
 📌 Features
@@ -13,10 +14,10 @@ Built with Flutter (frontend) and Flask (backend), this tool streamlines the pro
 
 
 🛠️ Tech Stack
-Layer	     Tech
-Frontend	Flutter
+Layer	       Tech
+Frontend	  Flutter
 Backend	    Flask + Python
-AI Engine	Autogen based LLM agents
+AI Engine 	Autogen based LLM agents
 API	        REST(JSON-based POST requests)
 Hosting	     Localhost / Render / Railway
 
@@ -24,39 +25,47 @@ Hosting	     Localhost / Render / Railway
 
 📦 AI-Powered-Code-Assistant
 ├── frontend_flutter/
-│   └── lib/
-│       └── main.dart (code validation UI)
+   └── lib/ main.dart (code validation UI)
 ├── backend_flask/
-│   ├── app.py
-│   ├── Code_tool.py
-│   ├── config.json
-│   └── requirements.txt
+  ├── app.py
+  ├── Code_tool.py
+  ├── config.json
+  └── requirements.txt
 ├── README.md
 
 🚀 Getting Started
-1️⃣ Backend Setup (Flask + AI Agents)
-✅ Prerequisites
-Python 3.8+
+  
+  1️⃣ Backend Setup (Flask + AI Agents)
+ 
+  ✅ Prerequisites
+  
+   Python 3.8+
 
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
-A config.json file with your LLM API credentials
+  config.json file with your LLM API credentials
 
 🔧 Run Flask Server
-cd backend_flask
-python app.py
-Server runs at: http://127.0.0.1:5000
+  
+  cd backend_flask
+
+  python app.py
+  
+  Server runs at: http://127.0.0.1:5000
 
 
 📡 Available API Routes
-Method	Route	         Description
-POST	/generate_code	Generate code from prompt
-POST	/validate_code	Validate code for errors
-POST	/fix_code	    Fix broken code
+Method	   Route	              Description
+POST	  /generate_code	     Generate code from prompt
+POST	 /validate_code	     Validate code for errors
+POST	 /fix_code	            Fix broken code
 
 
 2️⃣ Frontend Setup (Flutter)
-✅ Prerequisites
+
+ 
+ ✅ Prerequisites
+
 Flutter SDK installed
 
 Android Studio or VS Code
@@ -67,6 +76,7 @@ flutter run
 
 
 🧠 Agent Logic
+
 Codegenerator: LLM agent generating code from prompt.
 
 Codevalidator: Validates syntax & semantics.
